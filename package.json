@@ -1,0 +1,12 @@
+{
+  "name": "vue-in-human-language",
+  "version": "1.0.26",
+  "description": "Vue speaks in human language",
+  "dependencies": {
+    "docco-plus": "~2.0.0"
+  },
+  "scripts": {
+        "start": "rm -rf annotated-src/* & node replace.js & docco-plus 'annotated-src/{**/*,*}'",
+        "test": "docco-plus 'annotated-src/{**/*,*}'"
+  }
+}

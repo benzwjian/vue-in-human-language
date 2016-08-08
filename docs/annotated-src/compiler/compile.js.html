@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>compile</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_1.css"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_5.css"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/32px.png"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/40px.png"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/throbber.gif"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_7.css"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_8.css"/>
+    
+
+    
+    <script src="../../assets/file_2.js"
+        type="text/javascript"></script>
+    
+    <script src="../../assets/file_3.js"
+        type="text/javascript"></script>
+    
+    <script src="../../assets/file_4.js"
+        type="text/javascript"></script>
+    
+    <script src="../../assets/file_6.js"
+        type="text/javascript"></script>
+    
+
+    <script type="application/json" id="jsTreeJSON">
+        [{"id":"annotated-src/filters/array-filters.js","text":"array-filters.js","icon":"jstree-file","parent":"annotated-src/filters","a_attr":{"href":"../filters/array-filters.js.html"},"state":{"selected":false}},{"id":"annotated-src","text":"annotated-src","icon":"jstree-folder","parent":"#","a_attr":{"href":".."},"state":{"opened":true}},{"id":"annotated-src/cache.js","text":"cache.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../cache.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler","text":"compiler","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"."},"state":{"opened":true}},{"id":"annotated-src/compiler/compile-props.js","text":"compile-props.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"compile-props.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler/compile.js","text":"compile.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"compile.js.html"},"state":{"selected":true}},{"id":"annotated-src/compiler/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"index.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler/resolve-slots.js","text":"resolve-slots.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"resolve-slots.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler/transclude.js","text":"transclude.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"transclude.js.html"},"state":{"selected":false}},{"id":"annotated-src/config.js","text":"config.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../config.js.html"},"state":{"selected":false}},{"id":"annotated-src/directive.js","text":"directive.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../directive.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives","text":"directives","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../directives"},"state":{"opened":false}},{"id":"annotated-src/directives/element","text":"element","icon":"jstree-folder","parent":"annotated-src/directives","a_attr":{"href":"../directives/element"},"state":{"opened":false}},{"id":"annotated-src/directives/element/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/element","a_attr":{"href":"../directives/element/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/element/partial.js","text":"partial.js","icon":"jstree-file","parent":"annotated-src/directives/element","a_attr":{"href":"../directives/element/partial.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/element/slot.js","text":"slot.js","icon":"jstree-file","parent":"annotated-src/directives/element","a_attr":{"href":"../directives/element/slot.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal","text":"internal","icon":"jstree-folder","parent":"annotated-src/directives","a_attr":{"href":"../directives/internal"},"state":{"opened":false}},{"id":"annotated-src/directives/internal/class.js","text":"class.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/class.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/component.js","text":"component.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/component.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/prop.js","text":"prop.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/prop.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/style.js","text":"style.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/style.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/transition.js","text":"transition.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/transition.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/priorities.js","text":"priorities.js","icon":"jstree-file","parent":"annotated-src/directives","a_attr":{"href":"../directives/priorities.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public","text":"public","icon":"jstree-folder","parent":"annotated-src/directives","a_attr":{"href":"../directives/public"},"state":{"opened":false}},{"id":"annotated-src/directives/public/bind.js","text":"bind.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/bind.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/cloak.js","text":"cloak.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/cloak.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/el.js","text":"el.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/el.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/for.js","text":"for.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/for.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/html.js","text":"html.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/html.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/if.js","text":"if.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/if.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model","text":"model","icon":"jstree-folder","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/model"},"state":{"opened":false}},{"id":"annotated-src/directives/public/model/checkbox.js","text":"checkbox.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/checkbox.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/radio.js","text":"radio.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/radio.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/select.js","text":"select.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/select.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/text.js","text":"text.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/text.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/on.js","text":"on.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/on.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/ref.js","text":"ref.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/ref.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/show.js","text":"show.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/show.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/text.js","text":"text.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/text.js.html"},"state":{"selected":false}},{"id":"annotated-src/filters","text":"filters","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../filters"},"state":{"opened":false}},{"id":"annotated-src/batcher.js","text":"batcher.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../batcher.js.html"},"state":{"selected":false}},{"id":"annotated-src/filters/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/filters","a_attr":{"href":"../filters/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/fragment","text":"fragment","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../fragment"},"state":{"opened":false}},{"id":"annotated-src/fragment/factory.js","text":"factory.js","icon":"jstree-file","parent":"annotated-src/fragment","a_attr":{"href":"../fragment/factory.js.html"},"state":{"selected":false}},{"id":"annotated-src/fragment/fragment.js","text":"fragment.js","icon":"jstree-file","parent":"annotated-src/fragment","a_attr":{"href":"../fragment/fragment.js.html"},"state":{"selected":false}},{"id":"annotated-src/global-api.js","text":"global-api.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../global-api.js.html"},"state":{"selected":false}},{"id":"annotated-src/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../index.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance","text":"instance","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../instance"},"state":{"opened":false}},{"id":"annotated-src/instance/api","text":"api","icon":"jstree-folder","parent":"annotated-src/instance","a_attr":{"href":"../instance/api"},"state":{"opened":false}},{"id":"annotated-src/instance/api/data.js","text":"data.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/data.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/api/dom.js","text":"dom.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/dom.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/api/events.js","text":"events.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/events.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/api/lifecycle.js","text":"lifecycle.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/lifecycle.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal","text":"internal","icon":"jstree-folder","parent":"annotated-src/instance","a_attr":{"href":"../instance/internal"},"state":{"opened":false}},{"id":"annotated-src/instance/internal/events.js","text":"events.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/events.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/init.js","text":"init.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/init.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/lifecycle.js","text":"lifecycle.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/lifecycle.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/misc.js","text":"misc.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/misc.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/state.js","text":"state.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/state.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/vue.js","text":"vue.js","icon":"jstree-file","parent":"annotated-src/instance","a_attr":{"href":"../instance/vue.js.html"},"state":{"selected":false}},{"id":"annotated-src/observer","text":"observer","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../observer"},"state":{"opened":false}},{"id":"annotated-src/observer/array.js","text":"array.js","icon":"jstree-file","parent":"annotated-src/observer","a_attr":{"href":"../observer/array.js.html"},"state":{"selected":false}},{"id":"annotated-src/observer/dep.js","text":"dep.js","icon":"jstree-file","parent":"annotated-src/observer","a_attr":{"href":"../observer/dep.js.html"},"state":{"selected":false}},{"id":"annotated-src/observer/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/observer","a_attr":{"href":"../observer/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers","text":"parsers","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../parsers"},"state":{"opened":false}},{"id":"annotated-src/parsers/directive.js","text":"directive.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/directive.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/expression.js","text":"expression.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/expression.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/path.js","text":"path.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/path.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/template.js","text":"template.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/template.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/text.js","text":"text.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/text.js.html"},"state":{"selected":false}},{"id":"annotated-src/transition","text":"transition","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../transition"},"state":{"opened":false}},{"id":"annotated-src/transition/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/transition","a_attr":{"href":"../transition/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/transition/queue.js","text":"queue.js","icon":"jstree-file","parent":"annotated-src/transition","a_attr":{"href":"../transition/queue.js.html"},"state":{"selected":false}},{"id":"annotated-src/transition/transition.js","text":"transition.js","icon":"jstree-file","parent":"annotated-src/transition","a_attr":{"href":"../transition/transition.js.html"},"state":{"selected":false}},{"id":"annotated-src/util","text":"util","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../util"},"state":{"opened":false}},{"id":"annotated-src/util/component.js","text":"component.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/component.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/debug.js","text":"debug.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/debug.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/dom.js","text":"dom.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/dom.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/env.js","text":"env.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/env.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/lang.js","text":"lang.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/lang.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/options.js","text":"options.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/options.js.html"},"state":{"selected":false}},{"id":"annotated-src/watcher.js","text":"watcher.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../watcher.js.html"},"state":{"selected":false}}]
+    </script>
+</head>
+<body class="markdown-body">
+<h1>
+    compile
+</h1>
+<div class="subHeading">
+    annotated-src/compiler/compile.js
+</div>
+<button type="button" class="navigatorToggle">&#9776; files...</button>
+<nav class="navigationTree minimized">
+    <input type="text" id="jsTreeSearch" placeholder="search..."/>
+    <div></div>
+</nav>
+<section>
+    <ul class="sectionDetails codeOnly">
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+                
+            </div><div class="content">
+                <div class="highlight"><pre><span class="hljs-keyword">import</span> publicDirectives <span class="hljs-keyword">from</span> <span class="hljs-string">'../directives/public/index'</span>
+<span class="hljs-keyword">import</span> internalDirectives <span class="hljs-keyword">from</span> <span class="hljs-string">'../directives/internal/index'</span>
+<span class="hljs-keyword">import</span> { compileProps } <span class="hljs-keyword">from</span> <span class="hljs-string">'./compile-props'</span>
+<span class="hljs-keyword">import</span> { parseText, tokensToExp } <span class="hljs-keyword">from</span> <span class="hljs-string">'../parsers/text'</span>
+<span class="hljs-keyword">import</span> { parseDirective } <span class="hljs-keyword">from</span> <span class="hljs-string">'../parsers/directive'</span>
+<span class="hljs-keyword">import</span> { parseTemplate } <span class="hljs-keyword">from</span> <span class="hljs-string">'../parsers/template'</span>
+<span class="hljs-keyword">import</span> {
+  _toString,
+  resolveAsset,
+  toArray,
+  warn,
+  remove,
+  replace,
+  commonTagRE,
+  checkComponentAttr,
+  findRef,
+  defineReactive,
+  getAttr
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'../util/index'</span>
+
+<span class="hljs-comment">/* special binding prefixes */</span>
+<span class="hljs-keyword">const</span> bindRE = <span class="hljs-regexp">/^v-bind:|^:/</span>
+<span class="hljs-keyword">const</span> onRE = <span class="hljs-regexp">/^v-on:|^@/</span>
+<span class="hljs-keyword">const</span> dirAttrRE = <span class="hljs-regexp">/^v-([^:]+)(?:$|:(.*)$)/</span>
+<span class="hljs-keyword">const</span> modifierRE = <span class="hljs-regexp">/\.[^\.]+/g</span>
+<span class="hljs-keyword">const</span> transitionRE = <span class="hljs-regexp">/^(v-bind:|:)?transition$/</span>
+
+<span class="hljs-comment">/* default directive priority */</span>
+<span class="hljs-keyword">const</span> DEFAULT_PRIORITY = <span class="hljs-number">1000</span>
+<span class="hljs-keyword">const</span> DEFAULT_TERMINAL_PRIORITY = <span class="hljs-number">2000</span>
+
+<span class="hljs-comment">/**
+ * Compile a template and return a reusable composite link
+ * function, which recursively contains more link functions
+ * inside. This top level compile function would normally
+ * be called on instance root nodes, but can also be used
+ * for partial compilation if the partial argument is true.
+ *
+ * The returned composite link function, when called, will
+ * return an unlink function that tearsdown all directives
+ * created during the linking phase.
+ *
+ * @param {Element|DocumentFragment} el
+ * @param {Object} options
+ * @param {Boolean} partial
+ * @return {Function}
+ */</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compile</span> (<span class="hljs-params">el, options, partial</span>) </span>{
+  <span class="hljs-comment">/* link function for the node itself. */</span>
+  <span class="hljs-keyword">var</span> nodeLinkFn = partial || !options._asComponent
+    ? compileNode(el, options)
+    : <span class="hljs-literal">null</span>
+  <span class="hljs-comment">/* link function for the childNodes */</span>
+  <span class="hljs-keyword">var</span> childLinkFn =
+    !(nodeLinkFn &amp;&amp; nodeLinkFn.terminal) &amp;&amp;
+    !isScript(el) &amp;&amp;
+    el.hasChildNodes()
+      ? compileNodeList(el.childNodes, options)
+      : <span class="hljs-literal">null</span>
+
+  <span class="hljs-comment">/**
+   * A composite linker function to be called on a already
+   * compiled piece of DOM, which instantiates all directive
+   * instances.
+   *
+   * @param {Vue} vm
+   * @param {Element|DocumentFragment} el
+   * @param {Vue} [host] - host vm of transcluded content
+   * @param {Object} [scope] - v-for scope
+   * @param {Fragment} [frag] - link context fragment
+   * @return {Function|undefined}
+   */</span>
+
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compositeLinkFn</span> (<span class="hljs-params">vm, el, host, scope, frag</span>) </span>{
+    <span class="hljs-comment">/* cache childNodes before linking parent, fix #657 */</span>
+    <span class="hljs-keyword">var</span> childNodes = toArray(el.childNodes)
+    <span class="hljs-comment">/* link */</span>
+    <span class="hljs-keyword">var</span> dirs = linkAndCapture(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compositeLinkCapturer</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">if</span> (nodeLinkFn) nodeLinkFn(vm, el, host, scope, frag)
+      <span class="hljs-keyword">if</span> (childLinkFn) childLinkFn(vm, childNodes, host, scope, frag)
+    }, vm)
+    <span class="hljs-keyword">return</span> makeUnlinkFn(vm, dirs)
+  }
+}
+
+<span class="hljs-comment">/**
+ * Apply a linker to a vm/element pair and capture the
+ * directives created during the process.
+ *
+ * @param {Function} linker
+ * @param {Vue} vm
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">linkAndCapture</span> (<span class="hljs-params">linker, vm</span>) </span>{
+  <span class="hljs-comment">/* istanbul ignore if */</span>
+  <span class="hljs-keyword">if</span> (process.env.NODE_ENV === <span class="hljs-string">'production'</span>) {
+    <span class="hljs-comment">/* reset directives before every capture in production */</span>
+    <span class="hljs-comment">/* mode, so that when unlinking we don't need to splice */</span>
+    <span class="hljs-comment">/* them out (which turns out to be a perf hit). */</span>
+    <span class="hljs-comment">/* they are kept in development mode because they are */</span>
+    <span class="hljs-comment">/* useful for Vue's own tests. */</span>
+    vm._directives = []
+  }
+  <span class="hljs-keyword">var</span> originalDirCount = vm._directives.length
+  linker()
+  <span class="hljs-keyword">var</span> dirs = vm._directives.slice(originalDirCount)
+  sortDirectives(dirs)
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, l = dirs.length; i &lt; l; i++) {
+    dirs[i]._bind()
+  }
+  <span class="hljs-keyword">return</span> dirs
+}
+
+<span class="hljs-comment">/**
+ * sort directives by priority (stable sort)
+ *
+ * @param {Array} dirs
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sortDirectives</span> (<span class="hljs-params">dirs</span>) </span>{
+  <span class="hljs-keyword">if</span> (dirs.length === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>
+
+  <span class="hljs-keyword">var</span> groupedMap = {}
+  <span class="hljs-keyword">var</span> i, j, k, l
+  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, j = dirs.length; i &lt; j; i++) {
+    <span class="hljs-keyword">var</span> dir = dirs[i]
+    <span class="hljs-keyword">var</span> priority = dir.descriptor.def.priority || DEFAULT_PRIORITY
+    <span class="hljs-keyword">var</span> array = groupedMap[priority]
+    <span class="hljs-keyword">if</span> (!array) {
+      array = groupedMap[priority] = []
+    }
+    array.push(dir)
+  }
+
+  <span class="hljs-keyword">var</span> index = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">var</span> priorities = <span class="hljs-built_in">Object</span>.keys(groupedMap).sort(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a &gt; b ? <span class="hljs-number">-1</span> : a === b ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>
+  })
+  <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, j = priorities.length; i &lt; j; i++) {
+    <span class="hljs-keyword">var</span> group = groupedMap[priorities[i]]
+    <span class="hljs-keyword">for</span> (k = <span class="hljs-number">0</span>, l = group.length; k &lt; l; k++) {
+      dirs[index++] = group[k]
+    }
+  }
+}
+
+<span class="hljs-comment">/**
+ * Linker functions return an unlink function that
+ * tearsdown all directives instances generated during
+ * the process.
+ *
+ * We create unlink functions with only the necessary
+ * information to avoid retaining additional closures.
+ *
+ * @param {Vue} vm
+ * @param {Array} dirs
+ * @param {Vue} [context]
+ * @param {Array} [contextDirs]
+ * @return {Function}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeUnlinkFn</span> (<span class="hljs-params">vm, dirs, context, contextDirs</span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">unlink</span> (<span class="hljs-params">destroying</span>) </span>{
+    teardownDirs(vm, dirs, destroying)
+    <span class="hljs-keyword">if</span> (context &amp;&amp; contextDirs) {
+      teardownDirs(context, contextDirs)
+    }
+  }
+  <span class="hljs-comment">/* expose linked directives */</span>
+  unlink.dirs = dirs
+  <span class="hljs-keyword">return</span> unlink
+}
+
+<span class="hljs-comment">/**
+ * Teardown partial linked directives.
+ *
+ * @param {Vue} vm
+ * @param {Array} dirs
+ * @param {Boolean} destroying
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">teardownDirs</span> (<span class="hljs-params">vm, dirs, destroying</span>) </span>{
+  <span class="hljs-keyword">var</span> i = dirs.length
+  <span class="hljs-keyword">while</span> (i--) {
+    dirs[i]._teardown()
+    <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; !destroying) {
+      vm._directives.$remove(dirs[i])
+    }
+  }
+}
+
+<span class="hljs-comment">/**
+ * Compile link props on an instance.
+ *
+ * @param {Vue} vm
+ * @param {Element} el
+ * @param {Object} props
+ * @param {Object} [scope]
+ * @return {Function}
+ */</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileAndLinkProps</span> (<span class="hljs-params">vm, el, props, scope</span>) </span>{
+  <span class="hljs-keyword">var</span> propsLinkFn = compileProps(el, props, vm)
+  <span class="hljs-keyword">var</span> propDirs = linkAndCapture(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    propsLinkFn(vm, scope)
+  }, vm)
+  <span class="hljs-keyword">return</span> makeUnlinkFn(vm, propDirs)
+}
+
+<span class="hljs-comment">/**
+ * Compile the root element of an instance.
+ *
+ * 1. attrs on context container (context scope)
+ * 2. attrs on the component template root node, if
+ *    replace:true (child scope)
+ *
+ * If this is a fragment instance, we only need to compile 1.
+ *
+ * @param {Element} el
+ * @param {Object} options
+ * @param {Object} contextOptions
+ * @return {Function}
+ */</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileRoot</span> (<span class="hljs-params">el, options, contextOptions</span>) </span>{
+  <span class="hljs-keyword">var</span> containerAttrs = options._containerAttrs
+  <span class="hljs-keyword">var</span> replacerAttrs = options._replacerAttrs
+  <span class="hljs-keyword">var</span> contextLinkFn, replacerLinkFn
+
+  <span class="hljs-comment">/* only need to compile other attributes for */</span>
+  <span class="hljs-comment">/* non-fragment instances */</span>
+  <span class="hljs-keyword">if</span> (el.nodeType !== <span class="hljs-number">11</span>) {
+    <span class="hljs-comment">/* for components, container and replacer need to be */</span>
+    <span class="hljs-comment">/* compiled separately and linked in different scopes. */</span>
+    <span class="hljs-keyword">if</span> (options._asComponent) {
+      <span class="hljs-comment">/* 2. container attributes */</span>
+      <span class="hljs-keyword">if</span> (containerAttrs &amp;&amp; contextOptions) {
+        contextLinkFn = compileDirectives(containerAttrs, contextOptions)
+      }
+      <span class="hljs-keyword">if</span> (replacerAttrs) {
+        <span class="hljs-comment">/* 3. replacer attributes */</span>
+        replacerLinkFn = compileDirectives(replacerAttrs, options)
+      }
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">/* non-component, just compile as a normal element. */</span>
+      replacerLinkFn = compileDirectives(el.attributes, options)
+    }
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; containerAttrs) {
+    <span class="hljs-comment">/* warn container directives for fragment instances */</span>
+    <span class="hljs-keyword">var</span> names = containerAttrs
+      .filter(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">attr</span>) </span>{
+        <span class="hljs-comment">/* allow vue-loader/vueify scoped css attributes */</span>
+        <span class="hljs-keyword">return</span> attr.name.indexOf(<span class="hljs-string">'_v-'</span>) &lt; <span class="hljs-number">0</span> &amp;&amp;
+          <span class="hljs-comment">/* allow event listeners */</span>
+          !onRE.test(attr.name) &amp;&amp;
+          <span class="hljs-comment">/* allow slots */</span>
+          attr.name !== <span class="hljs-string">'slot'</span>
+      })
+      .map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">attr</span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'"'</span> + attr.name + <span class="hljs-string">'"'</span>
+      })
+    <span class="hljs-keyword">if</span> (names.length) {
+      <span class="hljs-keyword">var</span> plural = names.length &gt; <span class="hljs-number">1</span>
+      warn(
+        <span class="hljs-string">'Attribute'</span> + (plural ? <span class="hljs-string">'s '</span> : <span class="hljs-string">' '</span>) + names.join(<span class="hljs-string">', '</span>) +
+        (plural ? <span class="hljs-string">' are'</span> : <span class="hljs-string">' is'</span>) + <span class="hljs-string">' ignored on component '</span> +
+        <span class="hljs-string">'&lt;'</span> + options.el.tagName.toLowerCase() + <span class="hljs-string">'&gt; because '</span> +
+        <span class="hljs-string">'the component is a fragment instance: '</span> +
+        <span class="hljs-string">'http://vuejs.org/guide/components.html#Fragment-Instance'</span>
+      )
+    }
+  }
+
+  options._containerAttrs = options._replacerAttrs = <span class="hljs-literal">null</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rootLinkFn</span> (<span class="hljs-params">vm, el, scope</span>) </span>{
+    <span class="hljs-comment">/* link context scope dirs */</span>
+    <span class="hljs-keyword">var</span> context = vm._context
+    <span class="hljs-keyword">var</span> contextDirs
+    <span class="hljs-keyword">if</span> (context &amp;&amp; contextLinkFn) {
+      contextDirs = linkAndCapture(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        contextLinkFn(context, el, <span class="hljs-literal">null</span>, scope)
+      }, context)
+    }
+
+    <span class="hljs-comment">/* link self */</span>
+    <span class="hljs-keyword">var</span> selfDirs = linkAndCapture(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">if</span> (replacerLinkFn) replacerLinkFn(vm, el)
+    }, vm)
+
+    <span class="hljs-comment">/* return the unlink function that tearsdown context */</span>
+    <span class="hljs-comment">/* container directives. */</span>
+    <span class="hljs-keyword">return</span> makeUnlinkFn(vm, selfDirs, context, contextDirs)
+  }
+}
+
+<span class="hljs-comment">/**
+ * Compile a node and return a nodeLinkFn based on the
+ * node type.
+ *
+ * @param {Node} node
+ * @param {Object} options
+ * @return {Function|null}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileNode</span> (<span class="hljs-params">node, options</span>) </span>{
+  <span class="hljs-keyword">var</span> type = node.nodeType
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-number">1</span> &amp;&amp; !isScript(node)) {
+    <span class="hljs-keyword">return</span> compileElement(node, options)
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-number">3</span> &amp;&amp; node.data.trim()) {
+    <span class="hljs-keyword">return</span> compileTextNode(node, options)
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>
+  }
+}
+
+<span class="hljs-comment">/**
+ * Compile an element and return a nodeLinkFn.
+ *
+ * @param {Element} el
+ * @param {Object} options
+ * @return {Function|null}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileElement</span> (<span class="hljs-params">el, options</span>) </span>{
+  <span class="hljs-comment">/* preprocess textareas. */</span>
+  <span class="hljs-comment">/* textarea treats its text content as the initial value. */</span>
+  <span class="hljs-comment">/* just bind it as an attr directive for value. */</span>
+  <span class="hljs-keyword">if</span> (el.tagName === <span class="hljs-string">'TEXTAREA'</span>) {
+    <span class="hljs-comment">/* a textarea which has v-pre attr should skip complie. */</span>
+    <span class="hljs-keyword">if</span> (getAttr(el, <span class="hljs-string">'v-pre'</span>) !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-keyword">return</span> skip
+    }
+    <span class="hljs-keyword">var</span> tokens = parseText(el.value)
+    <span class="hljs-keyword">if</span> (tokens) {
+      el.setAttribute(<span class="hljs-string">':value'</span>, tokensToExp(tokens))
+      el.value = <span class="hljs-string">''</span>
+    }
+  }
+  <span class="hljs-keyword">var</span> linkFn
+  <span class="hljs-keyword">var</span> hasAttrs = el.hasAttributes()
+  <span class="hljs-keyword">var</span> attrs = hasAttrs &amp;&amp; toArray(el.attributes)
+  <span class="hljs-comment">/* check terminal directives (for &amp; if) */</span>
+  <span class="hljs-keyword">if</span> (hasAttrs) {
+    linkFn = checkTerminalDirectives(el, attrs, options)
+  }
+  <span class="hljs-comment">/* check element directives */</span>
+  <span class="hljs-keyword">if</span> (!linkFn) {
+    linkFn = checkElementDirectives(el, options)
+  }
+  <span class="hljs-comment">/* check component */</span>
+  <span class="hljs-keyword">if</span> (!linkFn) {
+    linkFn = checkComponent(el, options)
+  }
+  <span class="hljs-comment">/* normal directives */</span>
+  <span class="hljs-keyword">if</span> (!linkFn &amp;&amp; hasAttrs) {
+    linkFn = compileDirectives(attrs, options)
+  }
+  <span class="hljs-keyword">return</span> linkFn
+}
+
+<span class="hljs-comment">/**
+ * Compile a textNode and return a nodeLinkFn.
+ *
+ * @param {TextNode} node
+ * @param {Object} options
+ * @return {Function|null} textNodeLinkFn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileTextNode</span> (<span class="hljs-params">node, options</span>) </span>{
+  <span class="hljs-comment">/* skip marked text nodes */</span>
+  <span class="hljs-keyword">if</span> (node._skip) {
+    <span class="hljs-keyword">return</span> removeText
+  }
+
+  <span class="hljs-keyword">var</span> tokens = parseText(node.wholeText)
+  <span class="hljs-keyword">if</span> (!tokens) {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>
+  }
+
+  <span class="hljs-comment">/* mark adjacent text nodes as skipped, */</span>
+  <span class="hljs-comment">/* because we are using node.wholeText to compile */</span>
+  <span class="hljs-comment">/* all adjacent text nodes together. This fixes */</span>
+  <span class="hljs-comment">/* issues in IE where sometimes it splits up a single */</span>
+  <span class="hljs-comment">/* text node into multiple ones. */</span>
+  <span class="hljs-keyword">var</span> next = node.nextSibling
+  <span class="hljs-keyword">while</span> (next &amp;&amp; next.nodeType === <span class="hljs-number">3</span>) {
+    next._skip = <span class="hljs-literal">true</span>
+    next = next.nextSibling
+  }
+
+  <span class="hljs-keyword">var</span> frag = <span class="hljs-built_in">document</span>.createDocumentFragment()
+  <span class="hljs-keyword">var</span> el, token
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, l = tokens.length; i &lt; l; i++) {
+    token = tokens[i]
+    el = token.tag
+      ? processTextToken(token, options)
+      : <span class="hljs-built_in">document</span>.createTextNode(token.value)
+    frag.appendChild(el)
+  }
+  <span class="hljs-keyword">return</span> makeTextNodeLinkFn(tokens, frag, options)
+}
+
+<span class="hljs-comment">/**
+ * Linker for an skipped text node.
+ *
+ * @param {Vue} vm
+ * @param {Text} node
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">removeText</span> (<span class="hljs-params">vm, node</span>) </span>{
+  remove(node)
+}
+
+<span class="hljs-comment">/**
+ * Process a single text token.
+ *
+ * @param {Object} token
+ * @param {Object} options
+ * @return {Node}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processTextToken</span> (<span class="hljs-params">token, options</span>) </span>{
+  <span class="hljs-keyword">var</span> el
+  <span class="hljs-keyword">if</span> (token.oneTime) {
+    el = <span class="hljs-built_in">document</span>.createTextNode(token.value)
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">if</span> (token.html) {
+      el = <span class="hljs-built_in">document</span>.createComment(<span class="hljs-string">'v-html'</span>)
+      setTokenType(<span class="hljs-string">'html'</span>)
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">/* IE will clean up empty textNodes during */</span>
+      <span class="hljs-comment">/* frag.cloneNode(true), so we have to give it */</span>
+      <span class="hljs-comment">/* something here... */</span>
+      el = <span class="hljs-built_in">document</span>.createTextNode(<span class="hljs-string">' '</span>)
+      setTokenType(<span class="hljs-string">'text'</span>)
+    }
+  }
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setTokenType</span> (<span class="hljs-params">type</span>) </span>{
+    <span class="hljs-keyword">if</span> (token.descriptor) <span class="hljs-keyword">return</span>
+    <span class="hljs-keyword">var</span> parsed = parseDirective(token.value)
+    token.descriptor = {
+      name: type,
+      def: publicDirectives[type],
+      expression: parsed.expression,
+      filters: parsed.filters
+    }
+  }
+  <span class="hljs-keyword">return</span> el
+}
+
+<span class="hljs-comment">/**
+ * Build a function that processes a textNode.
+ *
+ * @param {Array&lt;Object&gt;} tokens
+ * @param {DocumentFragment} frag
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeTextNodeLinkFn</span> (<span class="hljs-params">tokens, frag</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">textNodeLinkFn</span> (<span class="hljs-params">vm, el, host, scope</span>) </span>{
+    <span class="hljs-keyword">var</span> fragClone = frag.cloneNode(<span class="hljs-literal">true</span>)
+    <span class="hljs-keyword">var</span> childNodes = toArray(fragClone.childNodes)
+    <span class="hljs-keyword">var</span> token, value, node
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, l = tokens.length; i &lt; l; i++) {
+      token = tokens[i]
+      value = token.value
+      <span class="hljs-keyword">if</span> (token.tag) {
+        node = childNodes[i]
+        <span class="hljs-keyword">if</span> (token.oneTime) {
+          value = (scope || vm).$<span class="hljs-built_in">eval</span>(value)
+          <span class="hljs-keyword">if</span> (token.html) {
+            replace(node, parseTemplate(value, <span class="hljs-literal">true</span>))
+          } <span class="hljs-keyword">else</span> {
+            node.data = _toString(value)
+          }
+        } <span class="hljs-keyword">else</span> {
+          vm._bindDir(token.descriptor, node, host, scope)
+        }
+      }
+    }
+    replace(el, fragClone)
+  }
+}
+
+<span class="hljs-comment">/**
+ * Compile a node list and return a childLinkFn.
+ *
+ * @param {NodeList} nodeList
+ * @param {Object} options
+ * @return {Function|undefined}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileNodeList</span> (<span class="hljs-params">nodeList, options</span>) </span>{
+  <span class="hljs-keyword">var</span> linkFns = []
+  <span class="hljs-keyword">var</span> nodeLinkFn, childLinkFn, node
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, l = nodeList.length; i &lt; l; i++) {
+    node = nodeList[i]
+    nodeLinkFn = compileNode(node, options)
+    childLinkFn =
+      !(nodeLinkFn &amp;&amp; nodeLinkFn.terminal) &amp;&amp;
+      node.tagName !== <span class="hljs-string">'SCRIPT'</span> &amp;&amp;
+      node.hasChildNodes()
+        ? compileNodeList(node.childNodes, options)
+        : <span class="hljs-literal">null</span>
+    linkFns.push(nodeLinkFn, childLinkFn)
+  }
+  <span class="hljs-keyword">return</span> linkFns.length
+    ? makeChildLinkFn(linkFns)
+    : <span class="hljs-literal">null</span>
+}
+
+<span class="hljs-comment">/**
+ * Make a child link function for a node's childNodes.
+ *
+ * @param {Array&lt;Function&gt;} linkFns
+ * @return {Function} childLinkFn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeChildLinkFn</span> (<span class="hljs-params">linkFns</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">childLinkFn</span> (<span class="hljs-params">vm, nodes, host, scope, frag</span>) </span>{
+    <span class="hljs-keyword">var</span> node, nodeLinkFn, childrenLinkFn
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, n = <span class="hljs-number">0</span>, l = linkFns.length; i &lt; l; n++) {
+      node = nodes[n]
+      nodeLinkFn = linkFns[i++]
+      childrenLinkFn = linkFns[i++]
+      <span class="hljs-comment">/* cache childNodes before linking parent, fix #657 */</span>
+      <span class="hljs-keyword">var</span> childNodes = toArray(node.childNodes)
+      <span class="hljs-keyword">if</span> (nodeLinkFn) {
+        nodeLinkFn(vm, node, host, scope, frag)
+      }
+      <span class="hljs-keyword">if</span> (childrenLinkFn) {
+        childrenLinkFn(vm, childNodes, host, scope, frag)
+      }
+    }
+  }
+}
+
+<span class="hljs-comment">/**
+ * Check for element directives (custom elements that should
+ * be resovled as terminal directives).
+ *
+ * @param {Element} el
+ * @param {Object} options
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkElementDirectives</span> (<span class="hljs-params">el, options</span>) </span>{
+  <span class="hljs-keyword">var</span> tag = el.tagName.toLowerCase()
+  <span class="hljs-keyword">if</span> (commonTagRE.test(tag)) {
+    <span class="hljs-keyword">return</span>
+  }
+  <span class="hljs-keyword">var</span> def = resolveAsset(options, <span class="hljs-string">'elementDirectives'</span>, tag)
+  <span class="hljs-keyword">if</span> (def) {
+    <span class="hljs-keyword">return</span> makeTerminalNodeLinkFn(el, tag, <span class="hljs-string">''</span>, options, def)
+  }
+}
+
+<span class="hljs-comment">/**
+ * Check if an element is a component. If yes, return
+ * a component link function.
+ *
+ * @param {Element} el
+ * @param {Object} options
+ * @return {Function|undefined}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkComponent</span> (<span class="hljs-params">el, options</span>) </span>{
+  <span class="hljs-keyword">var</span> component = checkComponentAttr(el, options)
+  <span class="hljs-keyword">if</span> (component) {
+    <span class="hljs-keyword">var</span> ref = findRef(el)
+    <span class="hljs-keyword">var</span> descriptor = {
+      name: <span class="hljs-string">'component'</span>,
+      ref: ref,
+      expression: component.id,
+      def: internalDirectives.component,
+      modifiers: {
+        literal: !component.dynamic
+      }
+    }
+    <span class="hljs-keyword">var</span> componentLinkFn = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">vm, el, host, scope, frag</span>) </span>{
+      <span class="hljs-keyword">if</span> (ref) {
+        defineReactive((scope || vm).$refs, ref, <span class="hljs-literal">null</span>)
+      }
+      vm._bindDir(descriptor, el, host, scope, frag)
+    }
+    componentLinkFn.terminal = <span class="hljs-literal">true</span>
+    <span class="hljs-keyword">return</span> componentLinkFn
+  }
+}
+
+<span class="hljs-comment">/**
+ * Check an element for terminal directives in fixed order.
+ * If it finds one, return a terminal link function.
+ *
+ * @param {Element} el
+ * @param {Array} attrs
+ * @param {Object} options
+ * @return {Function} terminalLinkFn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkTerminalDirectives</span> (<span class="hljs-params">el, attrs, options</span>) </span>{
+  <span class="hljs-comment">/* skip v-pre */</span>
+  <span class="hljs-keyword">if</span> (getAttr(el, <span class="hljs-string">'v-pre'</span>) !== <span class="hljs-literal">null</span>) {
+    <span class="hljs-keyword">return</span> skip
+  }
+  <span class="hljs-comment">/* skip v-else block, but only if following v-if */</span>
+  <span class="hljs-keyword">if</span> (el.hasAttribute(<span class="hljs-string">'v-else'</span>)) {
+    <span class="hljs-keyword">var</span> prev = el.previousElementSibling
+    <span class="hljs-keyword">if</span> (prev &amp;&amp; prev.hasAttribute(<span class="hljs-string">'v-if'</span>)) {
+      <span class="hljs-keyword">return</span> skip
+    }
+  }
+
+  <span class="hljs-keyword">var</span> attr, name, value, modifiers, matched, dirName, rawName, arg, def, termDef
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, j = attrs.length; i &lt; j; i++) {
+    attr = attrs[i]
+    name = attr.name.replace(modifierRE, <span class="hljs-string">''</span>)
+    <span class="hljs-keyword">if</span> ((matched = name.match(dirAttrRE))) {
+      def = resolveAsset(options, <span class="hljs-string">'directives'</span>, matched[<span class="hljs-number">1</span>])
+      <span class="hljs-keyword">if</span> (def &amp;&amp; def.terminal) {
+        <span class="hljs-keyword">if</span> (!termDef || ((def.priority || DEFAULT_TERMINAL_PRIORITY) &gt; termDef.priority)) {
+          termDef = def
+          rawName = attr.name
+          modifiers = parseModifiers(attr.name)
+          value = attr.value
+          dirName = matched[<span class="hljs-number">1</span>]
+          arg = matched[<span class="hljs-number">2</span>]
+        }
+      }
+    }
+  }
+
+  <span class="hljs-keyword">if</span> (termDef) {
+    <span class="hljs-keyword">return</span> makeTerminalNodeLinkFn(el, dirName, value, options, termDef, rawName, arg, modifiers)
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">skip</span> (<span class="hljs-params"></span>) </span>{}
+skip.terminal = <span class="hljs-literal">true</span>
+
+<span class="hljs-comment">/**
+ * Build a node link function for a terminal directive.
+ * A terminal link function terminates the current
+ * compilation recursion and handles compilation of the
+ * subtree in the directive.
+ *
+ * @param {Element} el
+ * @param {String} dirName
+ * @param {String} value
+ * @param {Object} options
+ * @param {Object} def
+ * @param {String} [rawName]
+ * @param {String} [arg]
+ * @param {Object} [modifiers]
+ * @return {Function} terminalLinkFn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeTerminalNodeLinkFn</span> (<span class="hljs-params">el, dirName, value, options, def, rawName, arg, modifiers</span>) </span>{
+  <span class="hljs-keyword">var</span> parsed = parseDirective(value)
+  <span class="hljs-keyword">var</span> descriptor = {
+    name: dirName,
+    arg: arg,
+    expression: parsed.expression,
+    filters: parsed.filters,
+    raw: value,
+    attr: rawName,
+    modifiers: modifiers,
+    def: def
+  }
+  <span class="hljs-comment">/* check ref for v-for, v-if and router-view */</span>
+  <span class="hljs-keyword">if</span> (dirName === <span class="hljs-string">'for'</span> || dirName === <span class="hljs-string">'if'</span> || dirName === <span class="hljs-string">'router-view'</span>) {
+    descriptor.ref = findRef(el)
+  }
+  <span class="hljs-keyword">var</span> fn = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">terminalNodeLinkFn</span> (<span class="hljs-params">vm, el, host, scope, frag</span>) </span>{
+    <span class="hljs-keyword">if</span> (descriptor.ref) {
+      defineReactive((scope || vm).$refs, descriptor.ref, <span class="hljs-literal">null</span>)
+    }
+    vm._bindDir(descriptor, el, host, scope, frag)
+  }
+  fn.terminal = <span class="hljs-literal">true</span>
+  <span class="hljs-keyword">return</span> fn
+}
+
+<span class="hljs-comment">/**
+ * Compile the directives on an element and return a linker.
+ *
+ * @param {Array|NamedNodeMap} attrs
+ * @param {Object} options
+ * @return {Function}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileDirectives</span> (<span class="hljs-params">attrs, options</span>) </span>{
+  <span class="hljs-keyword">var</span> i = attrs.length
+  <span class="hljs-keyword">var</span> dirs = []
+  <span class="hljs-keyword">var</span> attr, name, value, rawName, rawValue, dirName, arg, modifiers, dirDef, tokens, matched
+  <span class="hljs-keyword">while</span> (i--) {
+    attr = attrs[i]
+    name = rawName = attr.name
+    value = rawValue = attr.value
+    tokens = parseText(value)
+    <span class="hljs-comment">/* reset arg */</span>
+    arg = <span class="hljs-literal">null</span>
+    <span class="hljs-comment">/* check modifiers */</span>
+    modifiers = parseModifiers(name)
+    name = name.replace(modifierRE, <span class="hljs-string">''</span>)
+
+    <span class="hljs-comment">/* attribute interpolations */</span>
+    <span class="hljs-keyword">if</span> (tokens) {
+      value = tokensToExp(tokens)
+      arg = name
+      pushDir(<span class="hljs-string">'bind'</span>, publicDirectives.bind, tokens)
+      <span class="hljs-comment">/* warn against mixing mustaches with v-bind */</span>
+      <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span>) {
+        <span class="hljs-keyword">if</span> (name === <span class="hljs-string">'class'</span> &amp;&amp; <span class="hljs-built_in">Array</span>.prototype.some.call(attrs, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">attr</span>) </span>{
+          <span class="hljs-keyword">return</span> attr.name === <span class="hljs-string">':class'</span> || attr.name === <span class="hljs-string">'v-bind:class'</span>
+        })) {
+          warn(
+            <span class="hljs-string">'class="'</span> + rawValue + <span class="hljs-string">'": Do not mix mustache interpolation '</span> +
+            <span class="hljs-string">'and v-bind for "class" on the same element. Use one or the other.'</span>,
+            options
+          )
+        }
+      }
+    } <span class="hljs-keyword">else</span>
+
+    <span class="hljs-comment">/* special attribute: transition */</span>
+    <span class="hljs-keyword">if</span> (transitionRE.test(name)) {
+      modifiers.literal = !bindRE.test(name)
+      pushDir(<span class="hljs-string">'transition'</span>, internalDirectives.transition)
+    } <span class="hljs-keyword">else</span>
+
+    <span class="hljs-comment">/* event handlers */</span>
+    <span class="hljs-keyword">if</span> (onRE.test(name)) {
+      arg = name.replace(onRE, <span class="hljs-string">''</span>)
+      pushDir(<span class="hljs-string">'on'</span>, publicDirectives.on)
+    } <span class="hljs-keyword">else</span>
+
+    <span class="hljs-comment">/* attribute bindings */</span>
+    <span class="hljs-keyword">if</span> (bindRE.test(name)) {
+      dirName = name.replace(bindRE, <span class="hljs-string">''</span>)
+      <span class="hljs-keyword">if</span> (dirName === <span class="hljs-string">'style'</span> || dirName === <span class="hljs-string">'class'</span>) {
+        pushDir(dirName, internalDirectives[dirName])
+      } <span class="hljs-keyword">else</span> {
+        arg = dirName
+        pushDir(<span class="hljs-string">'bind'</span>, publicDirectives.bind)
+      }
+    } <span class="hljs-keyword">else</span>
+
+    <span class="hljs-comment">/* normal directives */</span>
+    <span class="hljs-keyword">if</span> ((matched = name.match(dirAttrRE))) {
+      dirName = matched[<span class="hljs-number">1</span>]
+      arg = matched[<span class="hljs-number">2</span>]
+
+      <span class="hljs-comment">/* skip v-else (when used with v-show) */</span>
+      <span class="hljs-keyword">if</span> (dirName === <span class="hljs-string">'else'</span>) {
+        <span class="hljs-keyword">continue</span>
+      }
+
+      dirDef = resolveAsset(options, <span class="hljs-string">'directives'</span>, dirName, <span class="hljs-literal">true</span>)
+      <span class="hljs-keyword">if</span> (dirDef) {
+        pushDir(dirName, dirDef)
+      }
+    }
+  }
+
+  <span class="hljs-comment">/**
+   * Push a directive.
+   *
+   * @param {String} dirName
+   * @param {Object|Function} def
+   * @param {Array} [interpTokens]
+   */</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushDir</span> (<span class="hljs-params">dirName, def, interpTokens</span>) </span>{
+    <span class="hljs-keyword">var</span> hasOneTimeToken = interpTokens &amp;&amp; hasOneTime(interpTokens)
+    <span class="hljs-keyword">var</span> parsed = !hasOneTimeToken &amp;&amp; parseDirective(value)
+    dirs.push({
+      name: dirName,
+      attr: rawName,
+      raw: rawValue,
+      def: def,
+      arg: arg,
+      modifiers: modifiers,
+      <span class="hljs-comment">/* conversion from interpolation strings with one-time token */</span>
+      <span class="hljs-comment">/* to expression is differed until directive bind time so that we */</span>
+      <span class="hljs-comment">/* have access to the actual vm context for one-time bindings. */</span>
+      expression: parsed &amp;&amp; parsed.expression,
+      filters: parsed &amp;&amp; parsed.filters,
+      interp: interpTokens,
+      hasOneTime: hasOneTimeToken
+    })
+  }
+
+  <span class="hljs-keyword">if</span> (dirs.length) {
+    <span class="hljs-keyword">return</span> makeNodeLinkFn(dirs)
+  }
+}
+
+<span class="hljs-comment">/**
+ * Parse modifiers from directive attribute name.
+ *
+ * @param {String} name
+ * @return {Object}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parseModifiers</span> (<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-keyword">var</span> res = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>)
+  <span class="hljs-keyword">var</span> match = name.match(modifierRE)
+  <span class="hljs-keyword">if</span> (match) {
+    <span class="hljs-keyword">var</span> i = match.length
+    <span class="hljs-keyword">while</span> (i--) {
+      res[match[i].slice(<span class="hljs-number">1</span>)] = <span class="hljs-literal">true</span>
+    }
+  }
+  <span class="hljs-keyword">return</span> res
+}
+
+<span class="hljs-comment">/**
+ * Build a link function for all directives on a single node.
+ *
+ * @param {Array} directives
+ * @return {Function} directivesLinkFn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makeNodeLinkFn</span> (<span class="hljs-params">directives</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nodeLinkFn</span> (<span class="hljs-params">vm, el, host, scope, frag</span>) </span>{
+    <span class="hljs-comment">/* reverse apply because it's sorted low to high */</span>
+    <span class="hljs-keyword">var</span> i = directives.length
+    <span class="hljs-keyword">while</span> (i--) {
+      vm._bindDir(directives[i], el, host, scope, frag)
+    }
+  }
+}
+
+<span class="hljs-comment">/**
+ * Check if an interpolation string contains one-time tokens.
+ *
+ * @param {Array} tokens
+ * @return {Boolean}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hasOneTime</span> (<span class="hljs-params">tokens</span>) </span>{
+  <span class="hljs-keyword">var</span> i = tokens.length
+  <span class="hljs-keyword">while</span> (i--) {
+    <span class="hljs-keyword">if</span> (tokens[i].oneTime) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isScript</span> (<span class="hljs-params">el</span>) </span>{
+  <span class="hljs-keyword">return</span> el.tagName === <span class="hljs-string">'SCRIPT'</span> &amp;&amp; (
+    !el.hasAttribute(<span class="hljs-string">'type'</span>) ||
+    el.getAttribute(<span class="hljs-string">'type'</span>) === <span class="hljs-string">'text/javascript'</span>
+  )
+}</pre></div>
+            </div>
+        </li>
+        
+    </ul>
+</section>
+</body>
+</html>

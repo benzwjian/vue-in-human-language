@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>compile-props</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_1.css"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_5.css"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/32px.png"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/40px.png"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/throbber.gif"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_7.css"/>
+    
+    <link rel="stylesheet"
+        media="all"
+        href="../../assets/file_8.css"/>
+    
+
+    
+    <script src="../../assets/file_2.js"
+        type="text/javascript"></script>
+    
+    <script src="../../assets/file_3.js"
+        type="text/javascript"></script>
+    
+    <script src="../../assets/file_4.js"
+        type="text/javascript"></script>
+    
+    <script src="../../assets/file_6.js"
+        type="text/javascript"></script>
+    
+
+    <script type="application/json" id="jsTreeJSON">
+        [{"id":"annotated-src/filters/array-filters.js","text":"array-filters.js","icon":"jstree-file","parent":"annotated-src/filters","a_attr":{"href":"../filters/array-filters.js.html"},"state":{"selected":false}},{"id":"annotated-src","text":"annotated-src","icon":"jstree-folder","parent":"#","a_attr":{"href":".."},"state":{"opened":true}},{"id":"annotated-src/cache.js","text":"cache.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../cache.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler","text":"compiler","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"."},"state":{"opened":true}},{"id":"annotated-src/compiler/compile-props.js","text":"compile-props.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"compile-props.js.html"},"state":{"selected":true}},{"id":"annotated-src/compiler/compile.js","text":"compile.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"compile.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"index.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler/resolve-slots.js","text":"resolve-slots.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"resolve-slots.js.html"},"state":{"selected":false}},{"id":"annotated-src/compiler/transclude.js","text":"transclude.js","icon":"jstree-file","parent":"annotated-src/compiler","a_attr":{"href":"transclude.js.html"},"state":{"selected":false}},{"id":"annotated-src/config.js","text":"config.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../config.js.html"},"state":{"selected":false}},{"id":"annotated-src/directive.js","text":"directive.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../directive.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives","text":"directives","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../directives"},"state":{"opened":false}},{"id":"annotated-src/directives/element","text":"element","icon":"jstree-folder","parent":"annotated-src/directives","a_attr":{"href":"../directives/element"},"state":{"opened":false}},{"id":"annotated-src/directives/element/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/element","a_attr":{"href":"../directives/element/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/element/partial.js","text":"partial.js","icon":"jstree-file","parent":"annotated-src/directives/element","a_attr":{"href":"../directives/element/partial.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/element/slot.js","text":"slot.js","icon":"jstree-file","parent":"annotated-src/directives/element","a_attr":{"href":"../directives/element/slot.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal","text":"internal","icon":"jstree-folder","parent":"annotated-src/directives","a_attr":{"href":"../directives/internal"},"state":{"opened":false}},{"id":"annotated-src/directives/internal/class.js","text":"class.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/class.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/component.js","text":"component.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/component.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/prop.js","text":"prop.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/prop.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/style.js","text":"style.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/style.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/internal/transition.js","text":"transition.js","icon":"jstree-file","parent":"annotated-src/directives/internal","a_attr":{"href":"../directives/internal/transition.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/priorities.js","text":"priorities.js","icon":"jstree-file","parent":"annotated-src/directives","a_attr":{"href":"../directives/priorities.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public","text":"public","icon":"jstree-folder","parent":"annotated-src/directives","a_attr":{"href":"../directives/public"},"state":{"opened":false}},{"id":"annotated-src/directives/public/bind.js","text":"bind.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/bind.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/cloak.js","text":"cloak.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/cloak.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/el.js","text":"el.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/el.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/for.js","text":"for.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/for.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/html.js","text":"html.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/html.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/if.js","text":"if.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/if.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model","text":"model","icon":"jstree-folder","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/model"},"state":{"opened":false}},{"id":"annotated-src/directives/public/model/checkbox.js","text":"checkbox.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/checkbox.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/radio.js","text":"radio.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/radio.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/select.js","text":"select.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/select.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/model/text.js","text":"text.js","icon":"jstree-file","parent":"annotated-src/directives/public/model","a_attr":{"href":"../directives/public/model/text.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/on.js","text":"on.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/on.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/ref.js","text":"ref.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/ref.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/show.js","text":"show.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/show.js.html"},"state":{"selected":false}},{"id":"annotated-src/directives/public/text.js","text":"text.js","icon":"jstree-file","parent":"annotated-src/directives/public","a_attr":{"href":"../directives/public/text.js.html"},"state":{"selected":false}},{"id":"annotated-src/filters","text":"filters","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../filters"},"state":{"opened":false}},{"id":"annotated-src/batcher.js","text":"batcher.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../batcher.js.html"},"state":{"selected":false}},{"id":"annotated-src/filters/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/filters","a_attr":{"href":"../filters/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/fragment","text":"fragment","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../fragment"},"state":{"opened":false}},{"id":"annotated-src/fragment/factory.js","text":"factory.js","icon":"jstree-file","parent":"annotated-src/fragment","a_attr":{"href":"../fragment/factory.js.html"},"state":{"selected":false}},{"id":"annotated-src/fragment/fragment.js","text":"fragment.js","icon":"jstree-file","parent":"annotated-src/fragment","a_attr":{"href":"../fragment/fragment.js.html"},"state":{"selected":false}},{"id":"annotated-src/global-api.js","text":"global-api.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../global-api.js.html"},"state":{"selected":false}},{"id":"annotated-src/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../index.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance","text":"instance","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../instance"},"state":{"opened":false}},{"id":"annotated-src/instance/api","text":"api","icon":"jstree-folder","parent":"annotated-src/instance","a_attr":{"href":"../instance/api"},"state":{"opened":false}},{"id":"annotated-src/instance/api/data.js","text":"data.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/data.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/api/dom.js","text":"dom.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/dom.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/api/events.js","text":"events.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/events.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/api/lifecycle.js","text":"lifecycle.js","icon":"jstree-file","parent":"annotated-src/instance/api","a_attr":{"href":"../instance/api/lifecycle.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal","text":"internal","icon":"jstree-folder","parent":"annotated-src/instance","a_attr":{"href":"../instance/internal"},"state":{"opened":false}},{"id":"annotated-src/instance/internal/events.js","text":"events.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/events.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/init.js","text":"init.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/init.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/lifecycle.js","text":"lifecycle.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/lifecycle.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/misc.js","text":"misc.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/misc.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/internal/state.js","text":"state.js","icon":"jstree-file","parent":"annotated-src/instance/internal","a_attr":{"href":"../instance/internal/state.js.html"},"state":{"selected":false}},{"id":"annotated-src/instance/vue.js","text":"vue.js","icon":"jstree-file","parent":"annotated-src/instance","a_attr":{"href":"../instance/vue.js.html"},"state":{"selected":false}},{"id":"annotated-src/observer","text":"observer","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../observer"},"state":{"opened":false}},{"id":"annotated-src/observer/array.js","text":"array.js","icon":"jstree-file","parent":"annotated-src/observer","a_attr":{"href":"../observer/array.js.html"},"state":{"selected":false}},{"id":"annotated-src/observer/dep.js","text":"dep.js","icon":"jstree-file","parent":"annotated-src/observer","a_attr":{"href":"../observer/dep.js.html"},"state":{"selected":false}},{"id":"annotated-src/observer/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/observer","a_attr":{"href":"../observer/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers","text":"parsers","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../parsers"},"state":{"opened":false}},{"id":"annotated-src/parsers/directive.js","text":"directive.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/directive.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/expression.js","text":"expression.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/expression.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/path.js","text":"path.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/path.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/template.js","text":"template.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/template.js.html"},"state":{"selected":false}},{"id":"annotated-src/parsers/text.js","text":"text.js","icon":"jstree-file","parent":"annotated-src/parsers","a_attr":{"href":"../parsers/text.js.html"},"state":{"selected":false}},{"id":"annotated-src/transition","text":"transition","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../transition"},"state":{"opened":false}},{"id":"annotated-src/transition/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/transition","a_attr":{"href":"../transition/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/transition/queue.js","text":"queue.js","icon":"jstree-file","parent":"annotated-src/transition","a_attr":{"href":"../transition/queue.js.html"},"state":{"selected":false}},{"id":"annotated-src/transition/transition.js","text":"transition.js","icon":"jstree-file","parent":"annotated-src/transition","a_attr":{"href":"../transition/transition.js.html"},"state":{"selected":false}},{"id":"annotated-src/util","text":"util","icon":"jstree-folder","parent":"annotated-src","a_attr":{"href":"../util"},"state":{"opened":false}},{"id":"annotated-src/util/component.js","text":"component.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/component.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/debug.js","text":"debug.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/debug.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/dom.js","text":"dom.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/dom.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/env.js","text":"env.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/env.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/index.js","text":"index.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/index.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/lang.js","text":"lang.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/lang.js.html"},"state":{"selected":false}},{"id":"annotated-src/util/options.js","text":"options.js","icon":"jstree-file","parent":"annotated-src/util","a_attr":{"href":"../util/options.js.html"},"state":{"selected":false}},{"id":"annotated-src/watcher.js","text":"watcher.js","icon":"jstree-file","parent":"annotated-src","a_attr":{"href":"../watcher.js.html"},"state":{"selected":false}}]
+    </script>
+</head>
+<body class="markdown-body">
+<h1>
+    compile-props
+</h1>
+<div class="subHeading">
+    annotated-src/compiler/compile-props.js
+</div>
+<button type="button" class="navigatorToggle">&#9776; files...</button>
+<nav class="navigationTree minimized">
+    <input type="text" id="jsTreeSearch" placeholder="search..."/>
+    <div></div>
+</nav>
+<section>
+    <ul class="sectionDetails codeOnly">
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+                
+            </div><div class="content">
+                <div class="highlight"><pre><span class="hljs-keyword">import</span> config <span class="hljs-keyword">from</span> <span class="hljs-string">'../config'</span>
+<span class="hljs-keyword">import</span> { parseDirective } <span class="hljs-keyword">from</span> <span class="hljs-string">'../parsers/directive'</span>
+<span class="hljs-keyword">import</span> { isSimplePath } <span class="hljs-keyword">from</span> <span class="hljs-string">'../parsers/expression'</span>
+<span class="hljs-keyword">import</span> { defineReactive, withoutConversion } <span class="hljs-keyword">from</span> <span class="hljs-string">'../observer/index'</span>
+<span class="hljs-keyword">import</span> propDef <span class="hljs-keyword">from</span> <span class="hljs-string">'../directives/internal/prop'</span>
+<span class="hljs-keyword">import</span> {
+  warn,
+  camelize,
+  hyphenate,
+  getAttr,
+  getBindAttr,
+  isLiteral,
+  toBoolean,
+  toNumber,
+  stripQuotes,
+  isArray,
+  isPlainObject,
+  isObject,
+  hasOwn
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'../util/index'</span>
+
+<span class="hljs-keyword">const</span> propBindingModes = config._propBindingModes
+<span class="hljs-keyword">const</span> empty = {}
+
+<span class="hljs-comment">/* regexes */</span>
+<span class="hljs-keyword">const</span> identRE = <span class="hljs-regexp">/^[$_a-zA-Z]+[\w$]*$/</span>
+<span class="hljs-keyword">const</span> settablePathRE = <span class="hljs-regexp">/^[A-Za-z_$][\w$]*(\.[A-Za-z_$][\w$]*|\[[^\[\]]+\])*$/</span>
+
+<span class="hljs-comment">/**
+ * Compile props on a root element and return
+ * a props link function.
+ *
+ * @param {Element|DocumentFragment} el
+ * @param {Array} propOptions
+ * @param {Vue} vm
+ * @return {Function} propsLinkFn
+ */</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compileProps</span> (<span class="hljs-params">el, propOptions, vm</span>) </span>{
+  <span class="hljs-keyword">var</span> props = []
+  <span class="hljs-keyword">var</span> propsData = vm.$options.propsData
+  <span class="hljs-keyword">var</span> names = <span class="hljs-built_in">Object</span>.keys(propOptions)
+  <span class="hljs-keyword">var</span> i = names.length
+  <span class="hljs-keyword">var</span> options, name, attr, value, path, parsed, prop
+  <span class="hljs-keyword">while</span> (i--) {
+    name = names[i]
+    options = propOptions[name] || empty
+
+    <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; name === <span class="hljs-string">'$data'</span>) {
+      warn(<span class="hljs-string">'Do not use $data as prop.'</span>, vm)
+      <span class="hljs-keyword">continue</span>
+    }
+
+    <span class="hljs-comment">/* props could contain dashes, which will be */</span>
+    <span class="hljs-comment">/* interpreted as minus calculations by the parser */</span>
+    <span class="hljs-comment">/* so we need to camelize the path here */</span>
+    path = camelize(name)
+    <span class="hljs-keyword">if</span> (!identRE.test(path)) {
+      process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; warn(
+        <span class="hljs-string">'Invalid prop key: "'</span> + name + <span class="hljs-string">'". Prop keys '</span> +
+        <span class="hljs-string">'must be valid identifiers.'</span>,
+        vm
+      )
+      <span class="hljs-keyword">continue</span>
+    }
+
+    prop = {
+      name: name,
+      path: path,
+      options: options,
+      mode: propBindingModes.ONE_WAY,
+      raw: <span class="hljs-literal">null</span>
+    }
+
+    attr = hyphenate(name)
+    <span class="hljs-comment">/* first check dynamic version */</span>
+    <span class="hljs-keyword">if</span> ((value = getBindAttr(el, attr)) === <span class="hljs-literal">null</span>) {
+      <span class="hljs-keyword">if</span> ((value = getBindAttr(el, attr + <span class="hljs-string">'.sync'</span>)) !== <span class="hljs-literal">null</span>) {
+        prop.mode = propBindingModes.TWO_WAY
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((value = getBindAttr(el, attr + <span class="hljs-string">'.once'</span>)) !== <span class="hljs-literal">null</span>) {
+        prop.mode = propBindingModes.ONE_TIME
+      }
+    }
+    <span class="hljs-keyword">if</span> (value !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-comment">/* has dynamic binding! */</span>
+      prop.raw = value
+      parsed = parseDirective(value)
+      value = parsed.expression
+      prop.filters = parsed.filters
+      <span class="hljs-comment">/* check binding type */</span>
+      <span class="hljs-keyword">if</span> (isLiteral(value) &amp;&amp; !parsed.filters) {
+        <span class="hljs-comment">/* for expressions containing literal numbers and */</span>
+        <span class="hljs-comment">/* booleans, there's no need to setup a prop binding, */</span>
+        <span class="hljs-comment">/* so we can optimize them as a one-time set. */</span>
+        prop.optimizedLiteral = <span class="hljs-literal">true</span>
+      } <span class="hljs-keyword">else</span> {
+        prop.dynamic = <span class="hljs-literal">true</span>
+        <span class="hljs-comment">/* check non-settable path for two-way bindings */</span>
+        <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp;
+            prop.mode === propBindingModes.TWO_WAY &amp;&amp;
+            !settablePathRE.test(value)) {
+          prop.mode = propBindingModes.ONE_WAY
+          warn(
+            <span class="hljs-string">'Cannot bind two-way prop with non-settable '</span> +
+            <span class="hljs-string">'parent path: '</span> + value,
+            vm
+          )
+        }
+      }
+      prop.parentPath = value
+
+      <span class="hljs-comment">/* warn required two-way */</span>
+      <span class="hljs-keyword">if</span> (
+        process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp;
+        options.twoWay &amp;&amp;
+        prop.mode !== propBindingModes.TWO_WAY
+      ) {
+        warn(
+          <span class="hljs-string">'Prop "'</span> + name + <span class="hljs-string">'" expects a two-way binding type.'</span>,
+          vm
+        )
+      }
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((value = getAttr(el, attr)) !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-comment">/* has literal binding! */</span>
+      prop.raw = value
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (propsData &amp;&amp; ((value = propsData[name] || propsData[path]) !== <span class="hljs-literal">null</span>)) {
+      <span class="hljs-comment">/* has propsData */</span>
+      prop.raw = value
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span>) {
+      <span class="hljs-comment">/* check possible camelCase prop usage */</span>
+      <span class="hljs-keyword">var</span> lowerCaseName = path.toLowerCase()
+      value = <span class="hljs-regexp">/[A-Z\-]/</span>.test(name) &amp;&amp; (
+        el.getAttribute(lowerCaseName) ||
+        el.getAttribute(<span class="hljs-string">':'</span> + lowerCaseName) ||
+        el.getAttribute(<span class="hljs-string">'v-bind:'</span> + lowerCaseName) ||
+        el.getAttribute(<span class="hljs-string">':'</span> + lowerCaseName + <span class="hljs-string">'.once'</span>) ||
+        el.getAttribute(<span class="hljs-string">'v-bind:'</span> + lowerCaseName + <span class="hljs-string">'.once'</span>) ||
+        el.getAttribute(<span class="hljs-string">':'</span> + lowerCaseName + <span class="hljs-string">'.sync'</span>) ||
+        el.getAttribute(<span class="hljs-string">'v-bind:'</span> + lowerCaseName + <span class="hljs-string">'.sync'</span>)
+      )
+      <span class="hljs-keyword">if</span> (value) {
+        warn(
+          <span class="hljs-string">'Possible usage error for prop `'</span> + lowerCaseName + <span class="hljs-string">'` - '</span> +
+          <span class="hljs-string">'did you mean `'</span> + attr + <span class="hljs-string">'`? HTML is case-insensitive, remember to use '</span> +
+          <span class="hljs-string">'kebab-case for props in templates.'</span>,
+          vm
+        )
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (options.required) {
+        <span class="hljs-comment">/* warn missing required */</span>
+        warn(<span class="hljs-string">'Missing required prop: '</span> + name, vm)
+      }
+    }
+    <span class="hljs-comment">/* push prop */</span>
+    props.push(prop)
+  }
+  <span class="hljs-keyword">return</span> makePropsLinkFn(props)
+}
+
+<span class="hljs-comment">/**
+ * Build a function that applies props to a vm.
+ *
+ * @param {Array} props
+ * @return {Function} propsLinkFn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makePropsLinkFn</span> (<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">propsLinkFn</span> (<span class="hljs-params">vm, scope</span>) </span>{
+    <span class="hljs-comment">/* store resolved props info */</span>
+    vm._props = {}
+    <span class="hljs-keyword">var</span> inlineProps = vm.$options.propsData
+    <span class="hljs-keyword">var</span> i = props.length
+    <span class="hljs-keyword">var</span> prop, path, options, value, raw
+    <span class="hljs-keyword">while</span> (i--) {
+      prop = props[i]
+      raw = prop.raw
+      path = prop.path
+      options = prop.options
+      vm._props[path] = prop
+      <span class="hljs-keyword">if</span> (inlineProps &amp;&amp; hasOwn(inlineProps, path)) {
+        initProp(vm, prop, inlineProps[path])
+      } <span class="hljs-keyword">if</span> (raw === <span class="hljs-literal">null</span>) {
+        <span class="hljs-comment">/* initialize absent prop */</span>
+        initProp(vm, prop, <span class="hljs-literal">undefined</span>)
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (prop.dynamic) {
+        <span class="hljs-comment">/* dynamic prop */</span>
+        <span class="hljs-keyword">if</span> (prop.mode === propBindingModes.ONE_TIME) {
+          <span class="hljs-comment">/* one time binding */</span>
+          value = (scope || vm._context || vm).$get(prop.parentPath)
+          initProp(vm, prop, value)
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">if</span> (vm._context) {
+            <span class="hljs-comment">/* dynamic binding */</span>
+            vm._bindDir({
+              name: <span class="hljs-string">'prop'</span>,
+              def: propDef,
+              prop: prop
+            }, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, scope) <span class="hljs-comment">/* el, host, scope */</span>
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">/* root instance */</span>
+            initProp(vm, prop, vm.$get(prop.parentPath))
+          }
+        }
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (prop.optimizedLiteral) {
+        <span class="hljs-comment">/* optimized literal, cast it and just set once */</span>
+        <span class="hljs-keyword">var</span> stripped = stripQuotes(raw)
+        value = stripped === raw
+          ? toBoolean(toNumber(raw))
+          : stripped
+        initProp(vm, prop, value)
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">/* string literal, but we need to cater for */</span>
+        <span class="hljs-comment">/* Boolean props with no value, or with same */</span>
+        <span class="hljs-comment">/* literal value (e.g. disabled="disabled") */</span>
+        <span class="hljs-comment">/* see https://github.com/vuejs/vue-loader/issues/182 */</span>
+        value = (
+          options.type === <span class="hljs-built_in">Boolean</span> &amp;&amp;
+          (raw === <span class="hljs-string">''</span> || raw === hyphenate(prop.name))
+        ) ? <span class="hljs-literal">true</span>
+          : raw
+        initProp(vm, prop, value)
+      }
+    }
+  }
+}
+
+<span class="hljs-comment">/**
+ * Process a prop with a rawValue, applying necessary coersions,
+ * default values &amp; assertions and call the given callback with
+ * processed value.
+ *
+ * @param {Vue} vm
+ * @param {Object} prop
+ * @param {*} rawValue
+ * @param {Function} fn
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processPropValue</span> (<span class="hljs-params">vm, prop, rawValue, fn</span>) </span>{
+  <span class="hljs-keyword">const</span> isSimple = prop.dynamic &amp;&amp; isSimplePath(prop.parentPath)
+  <span class="hljs-keyword">let</span> value = rawValue
+  <span class="hljs-keyword">if</span> (value === <span class="hljs-literal">undefined</span>) {
+    value = getPropDefaultValue(vm, prop)
+  }
+  value = coerceProp(prop, value, vm)
+  <span class="hljs-keyword">const</span> coerced = value !== rawValue
+  <span class="hljs-keyword">if</span> (!assertProp(prop, value, vm)) {
+    value = <span class="hljs-literal">undefined</span>
+  }
+  <span class="hljs-keyword">if</span> (isSimple &amp;&amp; !coerced) {
+    withoutConversion(() =&gt; {
+      fn(value)
+    })
+  } <span class="hljs-keyword">else</span> {
+    fn(value)
+  }
+}
+
+<span class="hljs-comment">/**
+ * Set a prop's initial value on a vm and its data object.
+ *
+ * @param {Vue} vm
+ * @param {Object} prop
+ * @param {*} value
+ */</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initProp</span> (<span class="hljs-params">vm, prop, value</span>) </span>{
+  processPropValue(vm, prop, value, value =&gt; {
+    defineReactive(vm, prop.path, value)
+  })
+}
+
+<span class="hljs-comment">/**
+ * Update a prop's value on a vm.
+ *
+ * @param {Vue} vm
+ * @param {Object} prop
+ * @param {*} value
+ */</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateProp</span> (<span class="hljs-params">vm, prop, value</span>) </span>{
+  processPropValue(vm, prop, value, value =&gt; {
+    vm[prop.path] = value
+  })
+}
+
+<span class="hljs-comment">/**
+ * Get the default value of a prop.
+ *
+ * @param {Vue} vm
+ * @param {Object} prop
+ * @return {*}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPropDefaultValue</span> (<span class="hljs-params">vm, prop</span>) </span>{
+  <span class="hljs-comment">/* no default, return undefined */</span>
+  <span class="hljs-keyword">const</span> options = prop.options
+  <span class="hljs-keyword">if</span> (!hasOwn(options, <span class="hljs-string">'default'</span>)) {
+    <span class="hljs-comment">/* absent boolean value defaults to false */</span>
+    <span class="hljs-keyword">return</span> options.type === <span class="hljs-built_in">Boolean</span>
+      ? <span class="hljs-literal">false</span>
+      : <span class="hljs-literal">undefined</span>
+  }
+  <span class="hljs-keyword">var</span> def = options.default
+  <span class="hljs-comment">/* warn against non-factory defaults for Object &amp; Array */</span>
+  <span class="hljs-keyword">if</span> (isObject(def)) {
+    process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; warn(
+      <span class="hljs-string">'Invalid default value for prop "'</span> + prop.name + <span class="hljs-string">'": '</span> +
+      <span class="hljs-string">'Props with type Object/Array must use a factory function '</span> +
+      <span class="hljs-string">'to return the default value.'</span>,
+      vm
+    )
+  }
+  <span class="hljs-comment">/* call factory function for non-Function types */</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> def === <span class="hljs-string">'function'</span> &amp;&amp; options.type !== <span class="hljs-built_in">Function</span>
+    ? def.call(vm)
+    : def
+}
+
+<span class="hljs-comment">/**
+ * Assert whether a prop is valid.
+ *
+ * @param {Object} prop
+ * @param {*} value
+ * @param {Vue} vm
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">assertProp</span> (<span class="hljs-params">prop, value, vm</span>) </span>{
+  <span class="hljs-keyword">if</span> (
+    !prop.options.required &amp;&amp; ( <span class="hljs-comment">/* non-required */</span>
+      prop.raw === <span class="hljs-literal">null</span> ||      <span class="hljs-comment">/* abscent */</span>
+      value == <span class="hljs-literal">null</span>             <span class="hljs-comment">/* null or undefined */</span>
+    )
+  ) {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+  }
+  <span class="hljs-keyword">var</span> options = prop.options
+  <span class="hljs-keyword">var</span> type = options.type
+  <span class="hljs-keyword">var</span> valid = !type
+  <span class="hljs-keyword">var</span> expectedTypes = []
+  <span class="hljs-keyword">if</span> (type) {
+    <span class="hljs-keyword">if</span> (!isArray(type)) {
+      type = [type]
+    }
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; type.length &amp;&amp; !valid; i++) {
+      <span class="hljs-keyword">var</span> assertedType = assertType(value, type[i])
+      expectedTypes.push(assertedType.expectedType)
+      valid = assertedType.valid
+    }
+  }
+  <span class="hljs-keyword">if</span> (!valid) {
+    <span class="hljs-keyword">if</span> (process.env.NODE_ENV !== <span class="hljs-string">'production'</span>) {
+      warn(
+        <span class="hljs-string">'Invalid prop: type check failed for prop "'</span> + prop.name + <span class="hljs-string">'".'</span> +
+        <span class="hljs-string">' Expected '</span> + expectedTypes.map(formatType).join(<span class="hljs-string">', '</span>) +
+        <span class="hljs-string">', got '</span> + formatValue(value) + <span class="hljs-string">'.'</span>,
+        vm
+      )
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+  }
+  <span class="hljs-keyword">var</span> validator = options.validator
+  <span class="hljs-keyword">if</span> (validator) {
+    <span class="hljs-keyword">if</span> (!validator(value)) {
+      process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; warn(
+        <span class="hljs-string">'Invalid prop: custom validator check failed for prop "'</span> + prop.name + <span class="hljs-string">'".'</span>,
+        vm
+      )
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+}
+
+<span class="hljs-comment">/**
+ * Force parsing value with coerce option.
+ *
+ * @param {*} value
+ * @param {Object} options
+ * @return {*}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">coerceProp</span> (<span class="hljs-params">prop, value, vm</span>) </span>{
+  <span class="hljs-keyword">var</span> coerce = prop.options.coerce
+  <span class="hljs-keyword">if</span> (!coerce) {
+    <span class="hljs-keyword">return</span> value
+  }
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> coerce === <span class="hljs-string">'function'</span>) {
+    <span class="hljs-keyword">return</span> coerce(value)
+  } <span class="hljs-keyword">else</span> {
+    process.env.NODE_ENV !== <span class="hljs-string">'production'</span> &amp;&amp; warn(
+      <span class="hljs-string">'Invalid coerce for prop "'</span> + prop.name + <span class="hljs-string">'": expected function, got '</span> + <span class="hljs-keyword">typeof</span> coerce + <span class="hljs-string">'.'</span>,
+      vm
+    )
+    <span class="hljs-keyword">return</span> value
+  }
+}
+
+<span class="hljs-comment">/**
+ * Assert the type of a value
+ *
+ * @param {*} value
+ * @param {Function} type
+ * @return {Object}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">assertType</span> (<span class="hljs-params">value, type</span>) </span>{
+  <span class="hljs-keyword">var</span> valid
+  <span class="hljs-keyword">var</span> expectedType
+  <span class="hljs-keyword">if</span> (type === <span class="hljs-built_in">String</span>) {
+    expectedType = <span class="hljs-string">'string'</span>
+    valid = <span class="hljs-keyword">typeof</span> value === expectedType
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-built_in">Number</span>) {
+    expectedType = <span class="hljs-string">'number'</span>
+    valid = <span class="hljs-keyword">typeof</span> value === expectedType
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-built_in">Boolean</span>) {
+    expectedType = <span class="hljs-string">'boolean'</span>
+    valid = <span class="hljs-keyword">typeof</span> value === expectedType
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-built_in">Function</span>) {
+    expectedType = <span class="hljs-string">'function'</span>
+    valid = <span class="hljs-keyword">typeof</span> value === expectedType
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-built_in">Object</span>) {
+    expectedType = <span class="hljs-string">'object'</span>
+    valid = isPlainObject(value)
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type === <span class="hljs-built_in">Array</span>) {
+    expectedType = <span class="hljs-string">'array'</span>
+    valid = isArray(value)
+  } <span class="hljs-keyword">else</span> {
+    valid = value <span class="hljs-keyword">instanceof</span> type
+  }
+  <span class="hljs-keyword">return</span> {
+    valid,
+    expectedType
+  }
+}
+
+<span class="hljs-comment">/**
+ * Format type for output
+ *
+ * @param {String} type
+ * @return {String}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">formatType</span> (<span class="hljs-params">type</span>) </span>{
+  <span class="hljs-keyword">return</span> type
+    ? type.charAt(<span class="hljs-number">0</span>).toUpperCase() + type.slice(<span class="hljs-number">1</span>)
+    : <span class="hljs-string">'custom type'</span>
+}
+
+<span class="hljs-comment">/**
+ * Format value
+ *
+ * @param {*} value
+ * @return {String}
+ */</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">formatValue</span> (<span class="hljs-params">val</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.toString.call(val).slice(<span class="hljs-number">8</span>, <span class="hljs-number">-1</span>)
+}</pre></div>
+            </div>
+        </li>
+        
+    </ul>
+</section>
+</body>
+</html>
