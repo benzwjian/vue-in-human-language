@@ -66,7 +66,7 @@
     <div></div>
 </nav>
 <section>
-    <ul class="sectionDetails codeOnly">
+    <ul class="sectionDetails ">
         
         
         <li id="section-1">
@@ -95,9 +95,17 @@
    * Accessor for `$data` property, since setting $data
    * requires observing the new object and updating
    * proxied properties.
-   */</span>
+   */</span></pre></div>
+            </div>
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+                <p> <a href="https://vuejs.org.cn/api/#vm-data">vm.$data</a><br> 用<code>Object.defineProperty</code>定義<code>$data</code>的getter/setter<br> 如果<code>$data</code>改變就執行<code>this._setDate()</code></p>
 
-  <span class="hljs-built_in">Object</span>.defineProperty(Vue.prototype, <span class="hljs-string">'$data'</span>, {
+            </div><div class="content">
+                <div class="highlight"><pre>  <span class="hljs-built_in">Object</span>.defineProperty(Vue.prototype, <span class="hljs-string">'$data'</span>, {
     get () {
       <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._data
     },
@@ -192,9 +200,17 @@
    * Swap the instance's $data. Called in $data's setter.
    *
    * @param {Object} newData
-   */</span>
+   */</span></pre></div>
+            </div>
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+                <p> 建立<code>$data</code>中每個key/value對應的getter/setter</p>
 
-  Vue.prototype._setData = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">newData</span>) </span>{
+            </div><div class="content">
+                <div class="highlight"><pre>  Vue.prototype._setData = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">newData</span>) </span>{
     newData = newData || {}
     <span class="hljs-keyword">var</span> oldData = <span class="hljs-keyword">this</span>._data
     <span class="hljs-keyword">this</span>._data = newData
@@ -203,8 +219,17 @@
     keys = <span class="hljs-built_in">Object</span>.keys(oldData)
     i = keys.length
     <span class="hljs-keyword">while</span> (i--) {
-      key = keys[i]
-      <span class="hljs-keyword">if</span> (!(key <span class="hljs-keyword">in</span> newData)) {
+      key = keys[i]</pre></div>
+            </div>
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+                <p> 如果舊資料不在新資料內, 就刪除它</p>
+
+            </div><div class="content">
+                <div class="highlight"><pre>      <span class="hljs-keyword">if</span> (!(key <span class="hljs-keyword">in</span> newData)) {
         <span class="hljs-keyword">this</span>._unproxy(key)
       }
     }
@@ -213,8 +238,17 @@
     keys = <span class="hljs-built_in">Object</span>.keys(newData)
     i = keys.length
     <span class="hljs-keyword">while</span> (i--) {
-      key = keys[i]
-      <span class="hljs-keyword">if</span> (!hasOwn(<span class="hljs-keyword">this</span>, key)) {
+      key = keys[i]</pre></div>
+            </div>
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+                <p> 如果是新資料就建立對應的getter/setter</p>
+
+            </div><div class="content">
+                <div class="highlight"><pre>      <span class="hljs-keyword">if</span> (!hasOwn(<span class="hljs-keyword">this</span>, key)) {
         <span class="hljs-comment">/* new property */</span>
         <span class="hljs-keyword">this</span>._proxy(key)
       }
@@ -229,9 +263,17 @@
    * vm.prop === vm._data.prop
    *
    * @param {String} key
-   */</span>
+   */</span></pre></div>
+            </div>
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+                <p> 建立key/value對應的getter/setter</p>
 
-  Vue.prototype._proxy = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key</span>) </span>{
+            </div><div class="content">
+                <div class="highlight"><pre>  Vue.prototype._proxy = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key</span>) </span>{
     <span class="hljs-keyword">if</span> (!isReserved(key)) {
       <span class="hljs-comment">/* need to store ref to self here */</span>
       <span class="hljs-comment">/* because these getter/setters might */</span>
@@ -255,9 +297,17 @@
    * Unproxy a property.
    *
    * @param {String} key
-   */</span>
+   */</span></pre></div>
+            </div>
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+                <p> 刪除key/value</p>
 
-  Vue.prototype._unproxy = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key</span>) </span>{
+            </div><div class="content">
+                <div class="highlight"><pre>  Vue.prototype._unproxy = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key</span>) </span>{
     <span class="hljs-keyword">if</span> (!isReserved(key)) {
       <span class="hljs-keyword">delete</span> <span class="hljs-keyword">this</span>[key]
     }

@@ -21,7 +21,9 @@ export default function (Vue) {
    * requires observing the new object and updating
    * proxied properties.
    */
-
+  // [vm.$data](https://vuejs.org.cn/api/#vm-data)  
+  // 用`Object.defineProperty`定義`$data`的getter/setter  
+  // 如果`$data`改變就執行`this._setDate()`
   Object.defineProperty(Vue.prototype, '$data', {
     get () {
       return this._data
@@ -54,8 +56,10 @@ export default function (Vue) {
    */
 
   Vue.prototype._initProps = function () {
+    // [vm.$options](https://vuejs.org.cn/api/#vm-options)
     var options = this.$options
     var el = options.el
+    // [props](https://vuejs.org.cn/api/#props)
     var props = options.props
     if (props && !el) {
       process.env.NODE_ENV !== 'production' && warn(
@@ -118,7 +122,7 @@ export default function (Vue) {
    *
    * @param {Object} newData
    */
-
+   // 建立`newData`中每個key/value對應的getter/setter
   Vue.prototype._setData = function (newData) {
     newData = newData || {}
     var oldData = this._data
@@ -129,6 +133,7 @@ export default function (Vue) {
     i = keys.length
     while (i--) {
       key = keys[i]
+      // 如果舊資料不在新資料內, 就刪除它
       if (!(key in newData)) {
         this._unproxy(key)
       }
@@ -139,6 +144,7 @@ export default function (Vue) {
     i = keys.length
     while (i--) {
       key = keys[i]
+      // 如果是新資料就建立對應的getter/setter
       if (!hasOwn(this, key)) {
         /* new property */
         this._proxy(key)
@@ -155,7 +161,8 @@ export default function (Vue) {
    *
    * @param {String} key
    */
-
+  // 建立key/value對應的getter/setter
+  // 並且在getter實現vm.prop === vm._data.prop
   Vue.prototype._proxy = function (key) {
     if (!isReserved(key)) {
       /* need to store ref to self here */
@@ -181,7 +188,7 @@ export default function (Vue) {
    *
    * @param {String} key
    */
-
+  // 刪除key/value
   Vue.prototype._unproxy = function (key) {
     if (!isReserved(key)) {
       delete this[key]

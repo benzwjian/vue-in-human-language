@@ -1,5 +1,6 @@
 import { mergeOptions } from '../../util/index'
-
+// [ES6 let命令](http://es6.ruanyifeng.com/#docs/let#let命令)  
+// 聲明一個塊級變量`uid`
 let uid = 0
 
 export default function (Vue) {
@@ -13,17 +14,31 @@ export default function (Vue) {
    *                           options and the options passed
    *                           in to the constructor.
    */
-
+  // 增加一個私有`_init()`方法到prototype
   Vue.prototype._init = function (options) {
     options = options || {}
-
+    // [vm.$el](https://vuejs.org.cn/api/#vm-el)  
+    // `vue`實例的掛載點  
+    // 初始值為`null`  
+    // 如果有`options.el`傳入會執行`this.$mount(options.el)`
     this.$el = null
+    // [vm.$parent](https://vuejs.org.cn/api/#vm-parent)  
+    // 父`Vue`實例
     this.$parent = options.parent
+    // [vm.$root](https://vuejs.org.cn/api/#vm-root)  
+    // 當前組件樹的根`Vue`實例   
+    // 如果當前實例沒有根, 就設為自己
     this.$root = this.$parent
       ? this.$parent.$root
       : this
+    // [vm.$children](https://vuejs.org.cn/api/#vm-children)  
+    // 當前實例的直接子組件陣列
     this.$children = []
+    // [vm.$refs](https://vuejs.org.cn/api/#vm-refs)  
+    // 用`v-ref`註冊的所有子組件
     this.$refs = {}       /* child vm references */
+    // [vm.$els](https://vuejs.org.cn/api/#vm-els)  
+    // 用`v-el`註冊的所有DOM元素
     this.$els = {}        /* element references */
     this._watchers = []   /* all watchers as an array */
     this._directives = [] /* all directives */
@@ -87,6 +102,7 @@ export default function (Vue) {
       this
     )
 
+    // `_updateRef()`實作在`instance/internal/lifecycle.js`
     /* set ref */
     this._updateRef()
 
@@ -94,12 +110,15 @@ export default function (Vue) {
     /* it will be filled up in _initData(). */
     this._data = {}
 
+    // `_callHook()`實作在`instance/internal/events.js`
     /* call init hook */
     this._callHook('init')
 
+    // `_initState()`實作在`instance/internal/state.js`
     /* initialize data observation and scope inheritance. */
     this._initState()
 
+    // `_initEvents()`實作在`instance/internal/events.js`
     /* setup event system and option events. */
     this._initEvents()
 
@@ -108,6 +127,8 @@ export default function (Vue) {
 
     /* if `el` option is passed, start compilation. */
     if (options.el) {
+      // [vm.$mount](https://vuejs.org.cn/api/#vm-mount)  
+      // 手動掛載`Vue`實例至錨點
       this.$mount(options.el)
     }
   }

@@ -106,69 +106,16 @@
 
             </div><div class="content">
                 <div class="highlight"><pre>  Vue.prototype._init = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">options</span>) </span>{
-    options = options || {}</pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-4">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-el">vm.$el</a><br> <code>vue</code>實例的掛載點<br> 初始值為<code>null</code><br> 如果有<code>options.el</code>傳入會執行<code>this.$mount(options.el)</code></p>
+    options = options || {}
 
-            </div><div class="content">
-                <div class="highlight"><pre>    <span class="hljs-keyword">this</span>.$el = <span class="hljs-literal">null</span></pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-5">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-parent">vm.$parent</a><br> 父<code>Vue</code>實例</p>
-
-            </div><div class="content">
-                <div class="highlight"><pre>    <span class="hljs-keyword">this</span>.$parent = options.parent</pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-6">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-root">vm.$root</a><br> 當前組件樹的根<code>Vue</code>實例<br> 如果當前實例沒有根, 就設為自己</p>
-
-            </div><div class="content">
-                <div class="highlight"><pre>    <span class="hljs-keyword">this</span>.$root = <span class="hljs-keyword">this</span>.$parent
+    <span class="hljs-keyword">this</span>.$el = <span class="hljs-literal">null</span>
+    <span class="hljs-keyword">this</span>.$parent = options.parent
+    <span class="hljs-keyword">this</span>.$root = <span class="hljs-keyword">this</span>.$parent
       ? <span class="hljs-keyword">this</span>.$parent.$root
-      : <span class="hljs-keyword">this</span></pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-7">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-children">vm.$children</a><br> 當前實例的直接子組件陣列</p>
-
-            </div><div class="content">
-                <div class="highlight"><pre>    <span class="hljs-keyword">this</span>.$children = []</pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-8">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-refs">vm.$refs</a><br> 用<code>v-ref</code>註冊的所有子組件</p>
-
-            </div><div class="content">
-                <div class="highlight"><pre>    <span class="hljs-keyword">this</span>.$refs = {}       <span class="hljs-comment">/* child vm references */</span></pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-9">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-els">vm.$els</a><br> 用<code>v-el</code>註冊的所有DOM元素</p>
-
-            </div><div class="content">
-                <div class="highlight"><pre>    <span class="hljs-keyword">this</span>.$els = {}        <span class="hljs-comment">/* element references */</span>
+      : <span class="hljs-keyword">this</span>
+    <span class="hljs-keyword">this</span>.$children = []
+    <span class="hljs-keyword">this</span>.$refs = {}       <span class="hljs-comment">/* child vm references */</span>
+    <span class="hljs-keyword">this</span>.$els = {}        <span class="hljs-comment">/* element references */</span>
     <span class="hljs-keyword">this</span>._watchers = []   <span class="hljs-comment">/* all watchers as an array */</span>
     <span class="hljs-keyword">this</span>._directives = [] <span class="hljs-comment">/* all directives */</span>
 
@@ -234,7 +181,7 @@
         </li>
         
         
-        <li id="section-10">
+        <li id="section-4">
             <div class="annotation">
                 <p> <code>_updateRef()</code>實作在<code>instance/internal/lifecycle.js</code></p>
 
@@ -249,7 +196,7 @@
         </li>
         
         
-        <li id="section-11">
+        <li id="section-5">
             <div class="annotation">
                 <p> <code>_callHook()</code>實作在<code>instance/internal/events.js</code></p>
 
@@ -260,7 +207,7 @@
         </li>
         
         
-        <li id="section-12">
+        <li id="section-6">
             <div class="annotation">
                 <p> <code>_initState()</code>實作在<code>instance/internal/state.js</code></p>
 
@@ -271,7 +218,7 @@
         </li>
         
         
-        <li id="section-13">
+        <li id="section-7">
             <div class="annotation">
                 <p> <code>_initEvents()</code>實作在<code>instance/internal/events.js</code></p>
 
@@ -283,17 +230,8 @@
     <span class="hljs-keyword">this</span>._callHook(<span class="hljs-string">'created'</span>)
 
     <span class="hljs-comment">/* if `el` option is passed, start compilation. */</span>
-    <span class="hljs-keyword">if</span> (options.el) {</pre></div>
-            </div>
-        </li>
-        
-        
-        <li id="section-14">
-            <div class="annotation">
-                <p> <a href="https://vuejs.org.cn/api/#vm-mount">vm.$mount</a><br> 手動掛載<code>Vue</code>實例至錨點</p>
-
-            </div><div class="content">
-                <div class="highlight"><pre>      <span class="hljs-keyword">this</span>.$mount(options.el)
+    <span class="hljs-keyword">if</span> (options.el) {
+      <span class="hljs-keyword">this</span>.$mount(options.el)
     }
   }
 }</pre></div>
