@@ -13,7 +13,6 @@
 2. npm test : 重新產生 docs/  
 
 ### 有興趣一起完善這份註解文件, 請直接發PR給我：  
-1. clone 副本  
-2. 加註解到 annotated-src/*.js (請使用單行註解)  
-3. 執行 npm test 產生 docs/*.html，然後用瀏覽器預覽  
-4. 你的貢獻值得分享就發PR給我  
+1. 加註解到 annotated-src/*.js (請使用單行註解)  
+2. 執行 npm test 產生 docs/*.html，然後用瀏覽器預覽  
+3. 你的貢獻值得分享就發PR給我  
